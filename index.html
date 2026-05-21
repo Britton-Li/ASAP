@@ -273,7 +273,7 @@
       <img src="static/images/teaser.png" alt="Teaser figure" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
       <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
-        Effectiveness of ASAP. While foundation models like FLUX and SDXL frequently struggle with complex human anatomy (FLUX/SDXL-Base), especially for fingers, ASAP significantly improves anatomical plausibility (FLUX/SDXL-ASAP).
+        While foundation models like FLUX and SDXL frequently struggle with complex human anatomy, especially for fingers, ASAP significantly improves anatomical plausibility.
       </h2>
     </div>
   </div>
@@ -315,8 +315,7 @@
           
           <div class="content has-text-justified">
             <p>
-              We conduct 4 motivating experiments that illustrate the benefits of learning within Model Trees. In each experiment, we train a linear classifier to predict the classes a ViT model was fine-tuned on... 
-              (请在这里将文字替换为你自己的方法说明或实验图注)
+              We introduce a two-phase approach to rectify anatomical artifacts without compromising global quality. In <strong>Phase I</strong>, we construct the HAP dataset using a localized degradation mechanism to synthesize negative samples that differ from positives exclusively in anatomical correctness. In <strong>Phase II</strong>, we propose a Localized and Margin-Bounded Alignment objective. Unlike standard DPO, which pushes the preference gap toward infinity and risks semantic collapse, our method utilizes a spatial weight map and enforces a target margin to penalize over-optimization, ensuring precise local corrections.
             </p>
           </div>
           
@@ -339,7 +338,7 @@
           
           <h2 class="title is-3" style="margin-bottom: 20px;">Synthetic Localized Preferences</h2>
           
-          <img src="static/images/framework.png" alt="Framework pipeline" style="width: 100%; max-width: 900px; display: block; margin: 0 auto 20px auto; border-radius: 8px;" />
+          <img src="static/images/failures.png" alt="Framework pipeline" style="width: 100%; max-width: 900px; display: block; margin: 0 auto 20px auto; border-radius: 8px;" />
           
           <div class="content has-text-justified">
             <p>
@@ -365,12 +364,25 @@
           
           <h2 class="title is-3" style="color: #000000; margin-bottom: 20px;">Experiments</h2>
           
-          <img src="static/images/your_third_image.png" alt="Third section results" style="width: 100%; max-width: 900px; display: block; margin: 0 auto 20px auto; border-radius: 8px;" />
+          <img src="static/images/performance.png" alt="Main performance results" style="width: 100%; max-width: 900px; display: block; margin: 0 auto 20px auto; border-radius: 8px;" />
+          
+          <div style="display: flex; justify-content: center; align-items: flex-start; width: 100%; margin-bottom: 20px;">
+            
+            <div style="width: 63%; padding: 5px;">
+              <img src="static/images/human_evaluation.png" alt="Small result 1" style="width: 100%; border-radius: 8px; display: block;" />
+            </div>
+            
+            <div style="width: 37%; padding: 5px;">
+              <img src="static/images/radar_chart.png" alt="Small result 2" style="width: 100%; border-radius: 8px; display: block;" />
+            </div>
+            
+          </div>
+
+          <img src="static/images/Ablation Study.png" alt="Bottom full-width result" style="width: 100%; max-width: 900px; display: block; margin: 0 auto 20px auto; border-radius: 8px;" />
           
           <div class="content has-text-justified">
             <p>
               这里输入第三章对应的图注、实验结果分析或方法论的详细说明文字...
-              (请在这里将文字替换为你自己的内容)
             </p>
           </div>
           
